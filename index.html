@@ -1,12 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Bebas Neue', cursive;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="">
+    <header>
+
+        <nav class="uppercase  flex gap-4 justify-between items-center p-6">
+
+            <div>
+                <h1 class="text-xl ">Jaka naka Production</h1>
+
+            </div>
+            <div>
+                <ul class="flex gap-4">
+                    <li><a href="">about us</a> </li>
+                    <li><a href="">our movies</a> </li>
+                    <li><a href="">services</a> </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section
+            class="flex justify-start items-center  bg-cover h-screen bg-slate-400 bg-[url('images/banner.jpg')] h-screen]">
+            <div class=" text-white m-14 ">
+                <div class="heading uppercase">
+                    <h3 class="my-2">Movie production studio</h3>
+
+                    <h1 class="text-7xl my-2">Films made to <br>
+                        <span class="text-[#FECC02]"> Perfection</span>
+                    </h1>
+
+
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis, pulvinar dapibus leo.</p>
+                <br><br>
+                <button
+                    class="border-2 hover:bg-[#fecc02] hover:border-[#fecc02] border-white text-white py-2 px-3 transition-all">DISCOVER
+                    MORE</button>
+
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <section class="my-20  border-2 border-black px-6 py-7">
+            <div class="md:flex justify-center gap-8 my-20">
+                <div class="relative">
+                    <img src="images/camera-man.jpg" alt="" class="w-full">
+                    <p
+                        class="bg-white py-2 px-6 text-lg mx-auto md:absolute bottom-[-20px]  left-48 text-center w-fit shadow-xl rounded-sm">
+                        23 YEARS OF EXPERIENCE</p>
+                </div>
+                <div>
+                    <h3>about</h3>
+                    <h1 class="text-7xl">FIlming Experience <br>
+                        Just Got better</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fuga tempore alias sunt iusto
+                        eveniet, beatae quis dignissimos vitae ipsa sequi laboriosam blanditiis! Nihil, natus libero
+                        quos officiis iure fugit!</p>
+                    <br><br>
+                    <button
+                        class="border-2 hover:bg-[#fecc02] hover:border-[#fecc02] border-black text-black py-2 px-3  transition-all">DISCOVER
+                        MORE</button>
+                </div>
+            </div>
+
+            <!-- dis -->
+            <div class="md:flex gap-6">
+                <div>
+                    <div class="border-t-4 border-black mt-4">
+                        <h1 class="text-3xl">our vision</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, reiciendis.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="border-t-4 border-black mt-4">
+                        <h1 class="text-3xl">our vision</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, reiciendis.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="border-t-4 border-black mt-4">
+                        <h1 class="text-3xl">our vision</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, reiciendis.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section movies  -->
+        <section class="bg-[#5f5c5c] text-white py-10">
+            <div class="flex justify-between items-center  mx-5">
+                <div>
+                    <h1>OUR MOVIES</h1>
+                    <h1 class="text-5xl">Movie collection</h1>
+                </div>
+                <div>
+                    <button
+                        class="border-2 hover:bg-[#fecc02] hover:border-[#fecc02] border-white text-white py-2 px-3 transition-all">DISCOVER
+                        MORE</button>
+
+                </div>
+            </div>
+
+            <div class="md:flex gap-8 m-5">
+                <div class="p-4 border-2 border-white ">
+                    <img src="images/inception.jpg" alt="" class="w-full h-full">
+                </div>
+                <div class="p-4 border-2 border-white ">
+                    <img src="images/fractured.jpg" alt="" class="w-full h-full">
+                </div>
+                <div class="p-4 border-2 border-white ">
+                    <img src="images/interstellar.jpg" alt="" class="w-full h-full">
+                </div>
+                <div class="p-4 border-2 border-white">
+                    <img src="images/tenet.jpg" alt="" class="w-full h-full">
+                </div>
+            </div>
+
+        </section>
+        <!-- what we offer section -->
+        <section>
+            <div class="uppercase w-1/2 m-auto text-center py-10">
+                <h4>services</h4>
+                <h1 class="text-5xl">What we offer</h1>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 m-4 md:m-20">
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/film.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+                    <br>
+
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/rim.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+
+                    <br>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/theater.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+                    <br>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/3d-glasss.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+                    <br>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/camera.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+                    <br>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/count-down.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+                    <br>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/cut-board.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+                    <br>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+                <div class="text-center border-2 px-4 py-6">
+                    <img src="images/icons/director-chair.png" alt="" class="w-[70px] m-auto">
+                    <br>
+                    <h3 class="uppercase text-xl">movies director</h3>
+                    <br>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="bg-black bg-opacity-25">
+
+        </div>
+
+    </footer>
+
+
 </body>
+
 </html>
